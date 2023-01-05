@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #344E41;
+    --heading-color: #ffffff;
+    --link-color: #2b9348;
+    --footer-color: #eeef20;
+    --shadow-color: #DAD7CD;
+    --font-header: "Cormorant Garamond",Verdana,Arial;
+    --font-paragraph:  "Roboto",Helvetica,sans-serif;
+}
+
+/* Globals */
+header footer main img{
+    box-sizing: border-box;
+}
+body{
+    max-width: 500px;
+    margin: 0.5em auto;
+    font-family: var(--font-paragraph);
+}
+h1,h2{
+    margin: 0;
+    font-family: var(--font-header);
+}
+
+header, footer{
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    box-shadow: 5px 5px 5px 5px var(--shadow-color);
+    border-radius: 15px; 
+}
+
+/* Header Section */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+}
+
+header h1{
+    font-size: 2.3em;
+}
+header img{
+    border-radius: 50px;
+}
+
+/* Main Section */
+main{
+    margin: 0;
+    padding: 1em 1.5em;
+    line-height: 1.3em;
+}
+main h2{
+    font-size: 1.8em;
+    text-shadow: 2px 2px 5px black;
+}
+main hr{
+    color: var(--primary-color);
+    margin: 0.5em 0 0 0;
+    border: 1px solid var(--primary-color);
+}
+main a{
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+main p{
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+/* Footer Section */
+footer{
+    margin-top: 0.7em;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    padding: 0.5em 0.5em;
+}
+.last_updated{
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--footer-color);
+}
