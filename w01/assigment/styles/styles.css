@@ -63,8 +63,7 @@ main hr{
 }
 main a{
     text-decoration: none;
-    color: var(--link-color);
-    font-weight: bold;
+    color: blue;
 }
 main p{
     font-style: italic;
