@@ -1,0 +1,10 @@
+/* Medium Size */
+
+@media (max-width: 962px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .third{
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,11 @@
+/* Small Size */
+
+@media (max-width: 568px){
+    main{
+        display: inline-block;
+        margin: 2em 0.5em;
+    }
+    .grid_container{
+        margin-top: 1em;
+    }
+}
