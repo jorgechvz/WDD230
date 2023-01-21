@@ -5,8 +5,8 @@
     --accent1-color: #490F1B;
     --accent2-color: #EFF6E0;
     /* Fonts */
-    --heading-font: 'Playfair Display', verdana, arial;
-    --paragraph-font: 'Garamond', sans-serif, arial;
+    --heading-font: 'Playfair Display';
+    --paragraph-font: 'Garamond';
 }
 @media screen and (max-width:928px) {
     /* Media Queries for Nav Bar */
