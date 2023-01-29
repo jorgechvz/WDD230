@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
     main{
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 60% 38.5%;
     }
     .hero_section, .event_section, .news_section, .spotlight_section{
         grid-column: 1/3;
@@ -14,5 +14,44 @@
     }
     .spotlight3{
         grid-column: 1/3;
+    }
+    /* Footer */
+    footer{
+        text-align: left;
+    }
+    .first_section_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1.5em;
+    }
+    .location_container{
+        grid-column: 1/3;
+    }
+    .social_container{
+        grid-column: 2/3;
+    }
+    .location_container iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .information_container{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+    }
+    .information_container img{
+        width: 100%;
+    }
+    .second_section_container{
+        display: flex;
+        justify-content: center;
+
+    }
+    .second_section_container p{
+        margin-left: 0.5em;
+    }
+    .span_section2{
+        visibility: visible;
     }
 }

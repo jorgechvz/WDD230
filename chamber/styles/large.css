@@ -65,4 +65,25 @@
     .spotlight_section div{
         height: 100%;
     }
+    /* Footer */
+    .first_section_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .social_container_global{
+        grid-row: 2/3;
+    }
+    .information_container div{
+        font-size: 1.7em;
+    }
+    .social_container_global h3, .location_container h3{
+        font-size: 1.7em;
+    }
+    .location_container{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .location_container iframe{
+        height: 400px;
+    }
 }   

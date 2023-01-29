@@ -9,14 +9,16 @@ time = function (decision){
         return `${time.getFullYear()}`;
     } 
 }
+/* Function to Navbar */
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
+/* DOM */
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 document.querySelector(".header_time").innerHTML = time("headerTime");
 document.querySelector(".copyright_year").innerHTML = time("copyright");
-document.querySelector(".last_updated").innerHTML = new Date(document.lastModified).toLocaleString("en-US");
+document.querySelector(".last_updated").innerHTML = new Date(document.lastModified).toLocaleString("en-UK");
 
