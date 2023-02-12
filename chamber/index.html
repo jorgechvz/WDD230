@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jorge A. Chavez">
-    <meta name="description" content="Assignment Week 5: Chamber Home Page Continued - WDD 230 - BYU-Idaho">
+    <meta name="description" content="Assignment Week 6: Responsive Design - WDD 230 - BYU-Idaho">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <nav>
             <div class="container">
                 <a href="index.html" class="containerLogo">
-                    <img src="images/logo3.png" alt="Arequipa Chamber Logo">
+                    <img src="images/logo3_1.webp" alt="Arequipa Chamber Logo">
                     <div>
                         <p class="titleArequipa">AREQUIPA</p>
                         <p class="titleChamber">Chamber Of Commerce</p>
@@ -45,7 +45,13 @@
             <h3>Welcome to Arequipa</h3>
             <a href="index.html" class="join-button">Join to Chamber
             </a>
-            <img src="images/hover_arequipa.jpg" alt="Arequipa Hover Image">
+            <figure class="hoverImage">
+                <img src="images/wdd230-org.jpg" alt="Arequipa Hover Image" sizes="100vW"
+                srcset="images/wdd230-org-Small.jpg 200w,
+                images/wdd230-org-Medium.jpg 500w,
+                images/wdd230-org-Large.jpg 800w"
+                >   
+            </figure>
         </section>
         <section class="event_section">
             <h3>Meet with the Chamber</h3>
@@ -58,16 +64,14 @@
         <section class="weather_section">
             <h3>Weather</h3>
             <img src="images/weather_icon.png" alt="Weather Icon">
-            <p class="temperature">23°C</p>
+            <p class="temperature">10&deg;C</p>
             <p class="weather_time">Party Cloud</p>
             <hr>
             <div class="container_windspeed">
-                <p>Wind Speed:</p>
-                <p>3.2 Km/h</p>
+                <p>Wind Speed: <span class="windSpeed">5</span> Km/h</p>
             </div>
             <div class="container_windchill">
-                <p>Wind Chill:</p>
-                <p>2.2 Km/h</p>
+                <p>Wind Chill: <span class="windChill"></span></p>
             </div>
         </section>
         <section class="news_section">
@@ -111,7 +115,7 @@
         <section class="first_section_container">
             <div class="information_container">
                 <a class="footer_logo" href="index.html">
-                    <img src="images/logo1.png" alt="Arequipa Chamber Logo">
+                    <img src="images/logo1.webp" alt="Arequipa Chamber Logo">
                 </a>
                 <div>
                     <h3>Arequipa Chamber</h3>
@@ -154,5 +158,6 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

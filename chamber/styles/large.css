@@ -34,7 +34,6 @@
         margin: 2em;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 24% 24% 24% 24%;
     }
     main section{
         height: 300px;
@@ -42,7 +41,7 @@
     .hero_section{
         grid-column: 2/4;
         grid-row: 1/4;
-        height: 100%;
+        width: 100%;
     }
     .hero_section h3{
         font-size: 3em;
