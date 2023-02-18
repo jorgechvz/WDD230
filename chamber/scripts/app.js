@@ -33,15 +33,17 @@ const spotlightSection = document.querySelector(".spotlight_section");
 const joinSection = document.querySelector(".join_section");
 const imageJoin = document.querySelector(".join_image");
 const currentDay = new Date().getDay();
-
-if (currentDay !== 1 && currentDay !== 2) {
-    eventSection.style.display = "none";
-} else{
-    weatherSection.classList.add('weather_section-grid');
-    heroSection.classList.add('hero_section-grid');
-    newsSection.classList.add('news_section-grid');
-    spotlightSection.classList.add('spotlight_section-grid');
-    joinSection.classList.add('join_section-grid');
-    imageJoin.classList.add('image_section-grid');
-    mainSection.classList.add('main-grid');
+if(eventSection !== null){
+    if (currentDay !== 1 && currentDay !== 2) {
+        eventSection.style.display = "none";
+    } else{
+        weatherSection.classList.add('weather_section-grid');
+        heroSection.classList.add('hero_section-grid');
+        newsSection.classList.add('news_section-grid');
+        spotlightSection.classList.add('spotlight_section-grid');
+        joinSection.classList.add('join_section-grid');
+        imageJoin.classList.add('image_section-grid');
+        mainSection.classList.add('main-grid');
+    }
 }
+

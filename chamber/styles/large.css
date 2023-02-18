@@ -165,4 +165,47 @@
     .location_container iframe{
         height: 400px;
     }
+    /* Discover Page */
+    .text_hover_discover{
+        font-size: 1.5em;
+    }
+    .gallery_container_box{
+        margin: 5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 1em;
+    }
+    @media screen and (max-width:1490px){
+        .gallery_container_box figure .capa p{
+            font-size: 1em;
+        }
+        .gallery_container_box figure .capa h3{
+            font-size: 1em;
+        }
+    }
+    .box1_container{
+        padding: 1em 1em 5em;
+    }
+    .box1_container h3{
+        background-color: var(--primary-color);
+        margin: 3vw 15vw 0;
+        padding: 2em 3em 3em;
+        text-align: center;
+        color: var(--accent3-color);
+    }
+    .box1_container picture{
+        position: relative;
+        top: -50px;
+    }
+    .box1_container picture img{
+        width: 75%;
+        display: block;
+        margin: auto;
+    }
+    .introduction_gallery h2{
+        font-size: 3em;
+    }
+    .introduction_gallery p{
+        margin: 3em;
+    }
 }   

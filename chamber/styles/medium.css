@@ -99,4 +99,34 @@
     .span_section2{
         visibility: visible;
     }
+    /* Discover Page */
+    .text_hover_discover{
+        font-size: 1.3em;
+    }
+    .gallery_container_box{
+        margin: 5em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1em;
+    }
+    .slider-controls button{
+        display: none;
+    }
+    @media screen and (max-width:932px){
+        .gallery_container_box figure .capa p{
+            font-size: 1em;
+        }
+        .gallery_container_box figure .capa h3{
+            font-size: 1.2em;
+        }
+    }
+    .box2_container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 1em 1em 5em;
+        text-align: center;
+    }
+    .icon_box img{
+        width: 35%;
+    }
 }

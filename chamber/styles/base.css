@@ -27,6 +27,7 @@ header{
     flex-direction: column;
     justify-items: center;
     color: var(--accent3-color);
+    z-index: 1;
 }
 h1,h2,h3,a,footer{
     font-family: var(--heading-font);
@@ -51,6 +52,23 @@ p, footer{
 header img{
     width: 80px;
 }
+figure {
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+picture img[data-src],
+figure img[data-src] {
+    filter: blur(1em);
+}
+
+picture img,
+figure img{
+    filter: blur(0em);
+    transition: filter 1.5s;
+}
+
 /* Navbar */
 nav {
     background-color: var(--primary-color);
@@ -82,6 +100,7 @@ nav ul li a:hover{
 }
 nav ul.open{
     display: block;
+    z-index: 1;
 }
 nav a{
     display: flex;
@@ -163,9 +182,6 @@ main section{
 }
 .hero_section img{
     width: 100%;
-}
-.hoverImage{
-    margin: 0;
 }
 .join-button button{
     font-size: 1.3em;
@@ -388,3 +404,170 @@ footer iframe{
 .second_section_container{
     text-align: center;
 }
+
+
+/* Discover Page */ 
+/* Main section */
+#main_discover{
+    margin: 0;
+    display: block;
+}
+#hero_discover{
+    margin: 0;
+    position: relative;
+    z-index: 0;
+}
+.hero_image_discover{
+    width: 100%;
+    opacity: .9;
+}
+.text_hover_discover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--accent3-color);
+    text-align: center;
+    width: calc(100%);
+    opacity: 85%;
+    z-index: inherit;
+}
+.about_arequipa_container p{
+    font-size: 2em;
+    padding: 2em 2em 1em;
+}
+.box1_container{
+    padding: 1em 1em 5em;
+}
+.box1_container h3{
+    background-color: var(--primary-color);
+    margin: 3em 3em 0;
+    padding: 2em 3em 3em;
+    text-align: center;
+    color: var(--accent3-color);
+}
+.box1_container picture{
+    position: relative;
+    top: -50px;
+}
+.box2_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1em 1em 5em;
+    text-align: center;
+}
+
+.icon_box img{
+    width: 25%;
+}
+.introduction_gallery{
+    margin: 2em;
+    text-align: center;
+}
+.introduction_gallery p{
+    font-size: 1.5em;
+    text-align: left;
+}
+/* Styles for pictures */
+.gallery_container_box figure{
+    position:relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px var(--secundary-color);
+}
+.gallery_container_box figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.gallery_container_box  figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent3-color);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.gallery_container_box figure:hover > .capa {
+    opacity: 85%;
+    visibility: visible;
+}
+.gallery_container_box figure:hover > .capa h3{
+    margin: 12% 0 5%;
+}
+.gallery_container_box figure:hover > img{
+    transform: scale(1.3);
+}
+.gallery_container_box figure .capa h3{
+    font-size: 2.2em;
+    color: var(--secundary-color);
+    margin-bottom: 1em;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    max-width: 1000%;
+}
+.gallery_container_box figure .capa p{
+    color: var(--secundary-color);
+    font-size: 1em; 
+    line-height: 1.5;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+@media screen and (min-width: 564px) {
+    .gallery_container_box figure .capa p{
+        font-size: 1.2em;
+    } 
+}
+
+/* Styles for Slider */
+.slider-container {
+    position: relative;
+    margin: 2em;
+}
+  
+.slider_picture {
+    display: flex;
+    overflow: hidden;
+}
+  
+.slider_picture img {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+  
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+  
+.slider-controls button {
+    background: transparent;
+    border: none;
+    font-size: 6em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.slider-controls button:hover {
+    transform: scale(1.5);
+}
+
+.localstorage{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 3em 1em;
+}
+  
