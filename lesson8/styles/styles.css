@@ -1,0 +1,38 @@
+caption{
+    margin-top: 1em;
+    caption-side: bottom;
+    letter-spacing: .5px;
+}
+table{
+    border: 1px solid black;
+    margin: 2em auto;
+}
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th, td{
+    padding: .5em 2em;
+    text-align: center;
+    border: .2px solid #000;
+}
+.title_tr th{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5em;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+.subtitle_empty{
+    background-color: #000;
+}
+.subtitle_tr{
+    background-color: #6d6d6d;
+    color: #fff;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+tbody tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
