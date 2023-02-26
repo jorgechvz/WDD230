@@ -46,4 +46,89 @@ if(eventSection !== null){
         mainSection.classList.add('main-grid');
     }
 }
+/* Lazyload */
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+const imagesOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 50px 0px"
+}
 
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {image.removeAttribute('data-src')};
+}
+
+if ("IntersectionObserver" in window) 
+{
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    },imagesOptions);
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+} else 
+{
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+}
+
+/* Scripts for Thank You Page */
+let countThankYou = 5;
+let countdownThankYou = setInterval(function() {
+  countThankYou--;
+  let count = document.getElementById("countdown");
+  if (count) {
+    count.innerHTML = countThankYou;
+  }
+  if (countThankYou == 0 && window.location.pathname === "/chamber/thankyou.html") {
+    clearInterval(countdownThankYou);
+    window.location.href = "index.html";
+  }
+}, 1000);
+
+
+
+/* Join Page */
+const membershipCardsContainer = document.getElementById("membership-cards-container");
+const joinForm = document.querySelector("#join-form-container");
+const myForm = document.querySelector(".join-form");
+const formLoadedTimeInput = document.getElementById('form-loaded-time');
+if (membershipCardsContainer){
+    membershipCardsContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("select-membership")) {
+        membershipCardsContainer.style.display = "none";
+        joinForm.style.display = "block";
+        const membershipLevelInput = document.getElementById("membership-level");
+        const selectedMembership = event.target.getAttribute("data-membership");
+        membershipLevelInput.value = selectedMembership;
+        localStorage.setItem("selectedMembership", selectedMembership);
+    }
+    });
+}
+
+window.addEventListener("load", function() {
+  const selectedMembership = localStorage.getItem("selectedMembership");
+  if (selectedMembership) {
+    if (joinForm){
+        joinForm.style.display = "none";
+        const membershipLevelInput = document.getElementById("membership-level");
+        membershipLevelInput.value = selectedMembership;
+    }
+  }
+});
+
+if (joinForm){
+    joinForm.addEventListener("submit", function() {
+      localStorage.removeItem("selectedMembership");
+    });
+}
+
+if (formLoadedTimeInput){
+    formLoadedTimeInput.value = time.toLocaleString("en-UK");
+}  
