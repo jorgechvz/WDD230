@@ -233,6 +233,9 @@
     .join-form{
         margin: 0 10em;
     }
+    .camp .joinBtn{
+        width: 70%;
+    }
     /* Thank You Styles */
     #thank-main{
         margin: 7em;

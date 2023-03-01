@@ -145,4 +145,11 @@
     .join-form{
         margin: 0 5em;
     }
+    .camp .joinBtn{
+        width: 80%;
+    }
+    /* Thankyou Page Styles */
+    #thank-main figure img{
+        width: 350px;
+    }
 }

@@ -79,14 +79,14 @@ if ("IntersectionObserver" in window)
 }
 
 /* Scripts for Thank You Page */
-let countThankYou = 5;
+let countThankYou = 20;
 let countdownThankYou = setInterval(function() {
   countThankYou--;
   let count = document.getElementById("countdown");
   if (count) {
     count.innerHTML = countThankYou;
   }
-  if (countThankYou == 0 && window.location.pathname === "/chamber/thankyou.html") {
+  if (countThankYou == 0 && window.location.pathname.includes("/chamber/thankyou.html")) {
     clearInterval(countdownThankYou);
     window.location.href = "index.html";
   }
