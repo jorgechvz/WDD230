@@ -5,7 +5,7 @@
         "address": "999 Main Street, Arequipa, Peru",
         "phone": "+51 222222222",
         "website": "https://www.superfoods.com",
-        "image": "chamber/images/directory/abc.png",
+        "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/abc.png",
         "membership": "bronze",
         "other_info": "Super Foods is a natural and organic foods retailer, offering a wide variety of healthy food options."
       },
