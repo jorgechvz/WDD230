@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jorge A. Chavez">
-    <meta name="description" content="Assignment Week 6: Responsive Design - WDD 230 - BYU-Idaho">
+    <meta name="description" content="Directory Page - WDD 230 - BYU-Idaho">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <title>Arequipa Chamber of Commerce | Home</title>
+    <title>Arequipa Chamber of Commerce | Directory</title>
 </head>
 <body>
     <header>
@@ -40,76 +40,20 @@
         </nav>
         <div class="header_time"></div>
     </header>
-    <main>
-        <section class="hero_section">
-            <h3>Welcome to Arequipa</h3>
-            <a href="index.html" class="join-button">Join to Chamber
-            </a>
-            <figure class="hoverImage">
-                <img src="images/hover_arequipa.jpg" alt="Arequipa Hover Image" sizes="100vW"
-                srcset="images/hover_arequipa200.jpg 200w,
-                images/hover_arequipa500.jpg 500w,
-                images/hover_arequipa800.jpg 800w"
-                >   
-            </figure>
-        </section>
-        <section class="event_section">
-            <h3>Meet with the Chamber</h3>
-            <div>
-                <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-                <a href="#">More info</a>
-            </div>
-            <img src="images/event_image.png" alt="Event Chamber of Commerce Image">
-        </section>
-        <section class="weather_section">
-            <h3>Weather</h3>
-            <img src="images/weather_icon.png" alt="Weather Icon">
-            <p class="temperature">10&deg;C</p>
-            <p class="weather_time">Party Cloud</p>
-            <hr>
-            <div class="container_windspeed">
-                <p>Wind Speed: <span class="windSpeed">5</span> Km/h</p>
-            </div>
-            <div class="container_windchill">
-                <p>Wind Chill: <span class="windChill"></span></p>
-            </div>
-        </section>
-        <section class="news_section">
-            <h3>New Release</h3>
-            <hr>
-            <p>The Chamber of Commerce of Arequipa held its first business meeting of the year with success. With the participation of over 100 local businesses, the event focused on discussing strategies to drive economic growth in the region. Additionally, business opportunities were presented and new trade alliances were established.</p>
-        </section>
-        <section class="spotlight_section">
-            <div class="spotlight1">
-                <h3>The Kingdom of Books</h3>
-                <img src="images/library_image.png" alt="The Kingdom of Books Logo Image">
-                <p>"Discover a World of Knowledge at The Kingdom of Books"</p>
-                <hr>
-                <a href="mailto:contact@kingdombooks.com">contact@kingdombooks.com</a>
-                <p>+51 994 143 123</p>
-            </div>
-            <div class="spotlight2">
-                <h3>Flavors of the World Kitchen</h3>
-                <img src="images/restaurante_image.png" alt="Flavors of the World Logo Image">
-                <p>"Boundless Tastes, Endless Possibilities"</p>
-                <hr>
-                <a href="mailto:contact-flavors@flavorskitchen.com">contact-flavors@flavorskitchen.com</a>
-                <p>+51 994 143 123</p>
-            </div>
-            <div class="spotlight3">
-                <h3>SpeedEats Delivery Co</h3>
-                <img src="images/delivery_image.png" alt="SpeedEats Logo Image">
-                <p>"Discover a World of Knowledge at The Kingdom of Books"</p>
-                <hr>
-                <a href="mailto:contact-speedeatst@speedeats.com">contact-speedeatst@speedeats.com</a>
-                <p>+51 972 999 241</p>
-            </div>
-        </section>
-        <section class="join_section">
-            <h3>Join the Arequipa Chamber of Commerce and become part of a community of business leaders committed to driving economic growth in the region</h3>
-            <a href="join.html">Join Us!</a>
-            <img src="images/join_image.png" alt="Join Us Image" class="join_image">
-        </section>
+    <main id="main_directory">
+        <div class="directory_title">
+            <h1>¡Welcome to the Arequipa business directory!</h1>
+            <p>Here you can find detailed information on a wide variety of local businesses, from restaurants and shops to specialized services.</p>
+        </div>
+        <div class="menu_directory">
+            <button class="grid-button">
+                <img src="images/directory/grid-icon.png" alt="Grid Icon">
+            </button>
+            <button class="list-button">
+                <img src="images/directory/list-icon.png" alt="List Icon">
+            </button>
+        </div>
+        <div id="directory_container" class="grid_container"></div>
     </main>
     <footer>
         <section class="first_section_container">
@@ -158,6 +102,6 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

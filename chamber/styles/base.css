@@ -678,3 +678,69 @@ footer iframe{
 #thank-main figure img{
     width: 100%;
 }
+/* Directory Page Styles */
+#main_directory{
+    display: block;
+    margin: 1em;
+    text-align: center;
+}
+.directory_title{
+    margin: 5em;
+}
+.directory_title p{
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+.menu_directory button{
+    cursor: pointer;
+    border: 2px solid black;
+    padding: .2em .3em 0;
+}
+.menu_directory button img{
+    width: 30px;
+    margin: 0 auto;
+}
+#directory_container section{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    box-shadow: 0 0 5px 5px var(--secundary-color);
+}
+.icon-directory{
+    width: 50%;
+    margin-top: 1em;
+}
+.grid_container {
+	display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 2em;
+}
+.grid_container section {
+	flex-direction: column;
+	text-align: center;
+}
+.list_container {
+	display: flex;
+	flex-direction: column;
+    margin: 2em;
+}
+.list_container section div{
+    display: flex;
+    flex-direction: column;
+}
+.list_container section div h2, .list_container section div p{
+    margin: 0em;
+    line-height: 2em;
+}
+.list_container section img {
+	display: none; 
+}
+.list_container section:nth-child(even) {
+	background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+.list_container section{
+    overflow: auto;
+}

@@ -240,4 +240,13 @@
     #thank-main{
         margin: 7em;
     }
+    /* Directory Page Styles */
+    .list_container section div{
+        display: grid;
+        grid-template-columns: 25% 24% 13% 15% 15%;
+        margin: 0;
+        padding: 0.25rem;
+        text-align: left;
+        align-items: center;
+    }
 }   
