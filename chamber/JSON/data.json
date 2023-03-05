@@ -5,7 +5,7 @@
         "address": "999 Main Street, Arequipa, Peru",
         "phone": "+51 222222222",
         "website": "https://www.superfoods.com",
-        "image": "../images/directory/superfoods.png",
+        "image": "chamber/images/directory/abc.png",
         "membership": "bronze",
         "other_info": "Super Foods is a natural and organic foods retailer, offering a wide variety of healthy food options."
       },
@@ -14,7 +14,7 @@
         "address": "888 Broad Street, Arequipa, Peru",
         "phone": "+51 333333333",
         "website": "https://www.innovativedesigns.com",
-        "image": "../images/directory/innovative.png",
+        "image": "chamber/images/directory/innovative.png",
         "membership": "silver",
         "other_info": "Innovative Designs is a design and branding agency, providing creative solutions for businesses of all sizes."
       },
@@ -23,7 +23,7 @@
         "address": "777 Main Street, Arequipa, Peru",
         "phone": "+51 444444444",
         "website": "https://www.globaltradeinc.com",
-        "image": "../images/directory/globaltrade.png",
+        "image": "chamber/images/directory/globaltrade.png",
         "membership": "gold",
         "other_info": "Global Trade Inc. is an international trade and logistics company, providing supply chain solutions to businesses worldwide."
       },
@@ -32,7 +32,7 @@
         "address": "666 Broad Street, Arequipa, Peru",
         "phone": "+51 555555555",
         "website": "https://www.myhomerealty.com",
-        "image": "../images/directory/myhome.png",
+        "image": "chamber/images/directory/myhome.png",
         "membership": "free",
         "other_info": "My Home Realty is a full-service real estate agency, helping clients buy and sell homes in the Arequipa area."
       },
@@ -41,7 +41,7 @@
         "address": "555 Main Street, Arequipa, Peru",
         "phone": "+51 666666666",
         "website": "https://www.peakperformancegym.com",
-        "image": "../images/directory/peakperformance.png",
+        "image": "chamber/images/directory/peakperformance.png",
         "membership": "silver",
         "other_info": "Peak Performance Gym is a fitness center offering a variety of exercise classes and equipment for all fitness levels."
       },
@@ -50,7 +50,7 @@
         "address": "444 Broad Street, Arequipa, Peru",
         "phone": "+51 777777777",
         "website": "https://www.techsavvysolutions.com",
-        "image": "../images/directory/techsavvy.png",
+        "image": "chamber/images/directory/techsavvy.png",
         "membership": "gold",
         "other_info": "Tech Savvy Solutions is an IT consulting firm specializing in network security and cloud computing services."
       },
@@ -59,7 +59,7 @@
         "address": "123 Main Street, Arequipa, Peru",
         "phone": "+51 987654321",
         "website": "https://www.abc.com",
-        "image": "../images/directory/abc.png",
+        "image": "chamber/images/directory/abc.png",
         "membership": "free",
         "other_info": "ABC Company is a software development company specializing in web and mobile applications."
       },
@@ -68,7 +68,7 @@
         "address": "456 Broad Street, Arequipa, Peru",
         "phone": "+51 555555555",
         "website": "https://www.xyzcorp.com",
-        "image": "../images/directory/xyz.png",
+        "image": "chamber/images/directory/xyz.png",
         "membership": "silver",
         "other_info": "XYZ Corporation is a global consulting firm providing business strategy and IT solutions."
       },
@@ -77,7 +77,7 @@
         "address": "789 Main Street, Arequipa, Peru",
         "phone": "+51 777777777",
         "website": "https://www.123inc.com",
-        "image": "../images/directory/123.png",
+        "image": "chamber/images/directory/123.png",
         "membership": "gold",
         "other_info": "123 Inc. is a leading provider of cloud-based business management solutions for small and medium-sized enterprises."
       },
@@ -86,7 +86,7 @@
         "address": "555 Broad Street, Arequipa, Peru",
         "phone": "+51 222222222",
         "website": "https://www.acmeco.com",
-        "image": "../images/directory/acme.png",
+        "image": "chamber/images/directory/acme.png",
         "membership": "bronze",
         "other_info": "Acme Co. is a manufacturer of innovative products for the consumer and industrial markets."
       },
@@ -95,7 +95,7 @@
         "address": "444 Main Street, Arequipa, Peru",
         "phone": "+51 333333333",
         "website": "https://www.ghiindustries.com",
-        "image": "../images/directory/ghi.png",
+        "image": "chamber/images/directory/ghi.png",
         "membership": "free",
         "other_info": "GHI Industries is a supplier of high-quality raw materials and chemicals for the manufacturing industry."
       },
@@ -104,7 +104,7 @@
         "address": "222 Broad Street, Arequipa, Peru",
         "phone": "+51 444444444",
         "website": "https://www.pqrservices.com",
-        "image": "../images/directory/pqr.png",
+        "image": "chamber/images/directory/pqr.png",
         "membership": "bronze",
         "other_info": "PQR Services provides professional consulting and advisory services for businesses in the finance and accounting sectors."
       },
@@ -113,7 +113,7 @@
         "address": "333 Main Street, Arequipa, Peru",
         "phone": "+51 111111111",
         "website": "https://www.lmnsolutions.com",
-        "image": "../images/directory/lmn.png",
+        "image": "chamber/images/directory/lmn.png",
         "membership": "silver",
         "other_info": "LMN Solutions offers comprehensive IT services and support for businesses of all sizes."
       },
@@ -122,7 +122,7 @@
         "address": "777 Broad Street, Arequipa, Peru",
         "phone": "+51 666666666",
         "website": "https://www.efginc.com",
-        "image": "../images/directory/efg.png",
+        "image": "chamber/images/directory/efg.png",
         "membership": "gold",
         "other_info": "EFG Inc. is a leading provider of advanced engineering and manufacturing services for the aerospace and defense industries."
       }
