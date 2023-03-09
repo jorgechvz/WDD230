@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 2px solid;
+    padding: 1em 2em;
+}
+.container h1{
+    color: rgb(4, 4, 82);
+    margin: 0;
+}
+.container p{
+    font-size: 1.3em;
+}
+.container figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container figure img{
+    width: 50px;
+}
+.container figure figcaption{
+    font-size: 1.2em;
+}
