@@ -324,6 +324,7 @@ main section{
 }
 
 .weather_section{
+    padding: 2em 1em;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     text-align: center;
