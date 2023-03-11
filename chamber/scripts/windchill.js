@@ -3,7 +3,7 @@ let temperature = document.querySelector(".temperature");
 let windSpeed = document.querySelector(".container_windspeed");
 let weatherIcon = document.querySelector(".weatherIcon");
 let weatherDesc = document.querySelector(".weather_time");
-
+let weatherContainer = document.querySelector(".weather_section");
 async function apiWeather() {
   try {
     const response = await fetch(url);
@@ -24,16 +24,23 @@ function displayData(weatherData){
   // Weather Icon
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt',desc)
-  // Weather Description
-  weatherDesc.innerHTML = `${capitalizeWords(desc)}`;
-  // Temperature and Wind Speed
-  temperature.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong><span>&deg;C</span>`;
-  windSpeed.innerHTML = `<p>Wind Speed: <span class="windSpeed">${weatherData.wind.speed}</span> Km/h</p>`;
   // Get the temperature and wind speed input values
   let temperatureValue = parseFloat(weatherData.main.temp.toFixed(0));
   let windSpeedValue = parseFloat(weatherData.wind.speed.toFixed(2));
+  // Display Weather Card
+  weatherContainer.innerHTML = `
+    <h3>Weather</h3>
+    <img class="weatherIcon" src="${iconsrc}" alt="${desc}">
+    <p class="temperature"><strong>${weatherData.main.temp.toFixed(0)}</strong><span>&deg;C</span></p>
+    <p class="weather_time">${capitalizeWords(desc)}</p>
+    <hr>
+    <div class="container_windspeed">
+      <p>Wind Speed: <span class="windSpeed">${weatherData.wind.speed}</span> Km/h</p>
+    </div>
+    <div class="container_windchill">
+        <p>Wind Chill: <span class="windChill"></span></p>
+    </div>
+  `;
   // Convert the temperature to Fahrenheit
   temperatureValue = (temperatureValue * 9/5) + 32;
   // Check if the input values meet the specification limits
