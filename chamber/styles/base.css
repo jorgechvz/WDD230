@@ -45,6 +45,10 @@ h3{
 p, footer{
     font-size: 1.2em;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
 .container{
     display: flex;
     justify-content: space-between;
@@ -104,6 +108,9 @@ nav ul.open{
 }
 nav a{
     display: flex;
+}
+a{
+    text-decoration: none;
 }
 .header_time{
     text-align: center;
@@ -258,10 +265,10 @@ main section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 90%;
 }
 .news_section h3{
     font-family: var(--heading-font);
-    font-size: 1.8em;
     margin: .5em 0;
 }
 .news_section hr{
@@ -270,6 +277,7 @@ main section{
 .spotlight_section{
     display: flex;
     flex-direction: column;
+    row-gap: .5em;
     height: 100%;
     border: 2px dashed var(--accent1-color);
     border-radius: 20px;
@@ -292,6 +300,10 @@ main section{
 .spotlight1,
 .spotlight2 {
     flex-basis: 50%;
+}
+.spotlight1 img,
+.spotlight2 img{
+    width: 50%;
 }
 .spotlight_section a{
     text-decoration: none;
@@ -329,12 +341,12 @@ main section{
     margin-bottom: .5em;
 }
 .weather_section img{
-    width: 60%;
+    width: 100px;
     margin: auto;
     grid-column: 1/2;
 }
 .temperature{
-    font-size: 5em;
+    font-size: 2.5em;
     margin: .5em 0;
 }
 .weather_time{
@@ -374,32 +386,60 @@ footer{
     font-size: .8em;
     color: var(--accent3-color);
 }
-footer iframe{
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-    margin: 1em 0;
+.footer_logo{
+    text-align: center;
 }
-.information_container{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-}
-.information_container a{
-    grid-column: 2/3;
-}
-.information_container div{
-    grid-row: 1/2;
-}
-.information_container img{
-    width: 100%;
+.footer_logo a img{
+    width: 40%;
 }
 .social_container{
     display: flex;
+    width: 50%;
+    height: auto;
     margin: 2em 0;
 }
 .social_container img{
-    width: 40%;
+    margin: auto;
+    width: 70%;
+}
+.quick_links_container{
+    margin: 2em 0 3em;
+}
+.container_qlinks{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0;
+}
+.container_qlinks a{
+    margin-right: 1em;
+}
+.information_text a,
+.information_text p,
+.container_qlinks a
+{
+    font-size: 1.1em;
+    color: var(--accent3-color);
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+.container_qlinks a::before, 
+.information_text a::before{
+    content: "";
+    position: absolute;
+    top: 115%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent3-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.container_qlinks a:hover, 
+.information_text a:hover{
+    color: var(--accent3-color);
+}  
+.container_qlinks a:hover::before,
+.information_text a:hover::before {
+    transform: scaleX(1);
 }
 .span_section2{
     visibility: hidden;
@@ -407,7 +447,6 @@ footer iframe{
 .second_section_container{
     text-align: center;
 }
-
 
 /* Discover Page */ 
 /* Main section */

@@ -35,12 +35,11 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join Us</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="header_time"></div>
     </header>
-    <main>
+    <main id="index-main">
         <section class="hero_section">
             <h3>Welcome to Arequipa</h3>
             <a href="index.html" class="join-button">Join to Chamber
@@ -63,12 +62,11 @@
         </section>
         <section class="weather_section">
             <h3>Weather</h3>
-            <img src="images/weather_icon.png" alt="Weather Icon">
-            <p class="temperature">10&deg;C</p>
-            <p class="weather_time">Party Cloud</p>
+            <img class="weatherIcon" src="" alt="">
+            <p class="temperature">0</p>
+            <p class="weather_time"></p>
             <hr>
             <div class="container_windspeed">
-                <p>Wind Speed: <span class="windSpeed">5</span> Km/h</p>
             </div>
             <div class="container_windchill">
                 <p>Wind Chill: <span class="windChill"></span></p>
@@ -108,24 +106,42 @@
         <section class="join_section">
             <h3>Join the Arequipa Chamber of Commerce and become part of a community of business leaders committed to driving economic growth in the region</h3>
             <a href="join.html">Join Us!</a>
-            <img src="images/join_image.png" alt="Join Us Image" class="join_image">
         </section>
     </main>
     <footer>
         <section class="first_section_container">
-            <div class="information_container">
-                <a class="footer_logo" href="index.html">
+            <div class="footer_logo">
+                <a href="index.html">
                     <img src="images/logo1.webp" alt="Arequipa Chamber Logo">
                 </a>
+            </div>
+            <div class="information_container">  
                 <div>
-                    <h3>Arequipa Chamber</h3>
-                    <p>aqpchamber@acofc.com.pe</p>
-                    <p>La Merced 101, Arequipa - Peru</p>
+                    <h3>Contact</h3>
+                    <hr>
+                </div>  
+                <div class="information_text">
+                    <p>+51 923 123 432</p>
+                    <p><a href="mailto:contact-speedeatst@speedeats.com">aqpchamber@acofc.com.pe</a></p>
+                    <a href="https://goo.gl/maps/ELCD3wGwHTDVeLs89">La Merced 101, Arequipa - Peru</a>
+                </div>
+            </div>
+            <div class="quick_links_container">
+                <div>
+                    <h3>Quick Links</h3>
+                    <hr>
+                </div>
+                <div class="container_qlinks">
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join Us</a>
+                    <a href="join.html">OpenWeatherMap</a>
                 </div>
             </div>
             <div class="social_container_global">
                 <div>
-                    <h3>Social Media</h3>
+                    <h3>Connect With Us</h3>
                     <hr>
                 </div>
                 <div class="social_container">
@@ -142,11 +158,6 @@
                         <img src="images/linkedin.png" alt="Linkedin Icon">
                     </a>
                 </div>
-            </div>
-            <div class="location_container">
-                <h3>Location</h3>
-                <hr>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.7519970266642!2d-71.53882734206208!3d-16.39921042407654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a59f121edd3%3A0xd60171d33a239ac6!2sC.%20la%20Merced%20101%2C%20Arequipa%2004001!5e0!3m2!1ses-419!2spe!4v1674846723858!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <hr>
