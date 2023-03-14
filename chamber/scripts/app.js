@@ -34,7 +34,7 @@ const joinSection = document.querySelector(".join_section");
 const imageJoin = document.querySelector(".join_image");
 const currentDay = new Date().getDay();
 if(eventSection !== null){
-    if (currentDay !== 1 && currentDay !== 2) {
+    if (currentDay !== 1 && currentDay !== 6) {
         eventSection.style.display = "none";
     } else{
         weatherSection.classList.add('weather_section-grid');
@@ -42,7 +42,6 @@ if(eventSection !== null){
         newsSection.classList.add('news_section-grid');
         spotlightSection.classList.add('spotlight_section-grid');
         joinSection.classList.add('join_section-grid');
-        imageJoin.classList.add('image_section-grid');
         mainSection.classList.add('main-grid');
     }
 }
