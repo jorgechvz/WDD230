@@ -75,6 +75,9 @@
     .quick_links_container{
         margin:0 0 1em;
     }
+    .container_qlinks p{
+        margin: .5em 0;
+    }
     .second_section_container{
         display: flex;
         justify-content: center;
@@ -106,14 +109,27 @@
             font-size: 1.2em;
         }
     }
+    .box1_container{
+        padding: 0 5em;
+    }
+    .box1_container picture{
+        top: -80px;
+    }
+    .box1_container h3{
+        font-size: 1.3em;
+    }
     .box2_container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        margin: 1em 1em 5em;
+        margin: 2em 6em 5em;
         text-align: center;
     }
-    .icon_box img{
-        width: 35%;
+    .introduction_gallery h2{
+        font-size: 2em;
+    }
+    .introduction_gallery p{
+        margin: 2.5em;
+        font-size: 1.5;
     }
     /* Join Page Styles */
     
@@ -137,5 +153,10 @@
     /* Thankyou Page Styles */
     #thank-main figure img{
         width: 350px;
+    }
+
+    /* Directory Page Styles */
+    .directory_title{
+        margin: 5em;
     }
 }

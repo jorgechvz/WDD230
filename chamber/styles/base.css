@@ -49,10 +49,6 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-}
 header img{
     width: 80px;
 }
@@ -119,6 +115,10 @@ a{
     border: 1px solid var(--accent2-color);
     font-size: 1em;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .containerLogo{
     text-decoration: none;
     color: var(--accent2-color);
@@ -152,14 +152,14 @@ a{
     display: block;
 }
 
-/* Main Section */
-main{
+/* Main Section Home Page*/
+#index-main{
     margin: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-main h3{
+#index-main h3{
     font-family: var(--paragraph-font);
 }
 main section{
@@ -304,7 +304,7 @@ main section{
 }
 .spotlight1 img,
 .spotlight2 img{
-    width: 50%;
+    width: 30%;
 }
 .spotlight_section a{
     text-decoration: none;
@@ -407,13 +407,8 @@ footer{
 .quick_links_container{
     margin: 2em 0 3em;
 }
-.container_qlinks{
-    display: flex;
-    justify-content: flex-start;
-    margin: 1em 0;
-}
-.container_qlinks a{
-    margin-right: 1em;
+.container_qlinks p{
+    margin: .7em 0;
 }
 .information_text a,
 .information_text p,
@@ -476,33 +471,47 @@ footer{
     opacity: 85%;
     z-index: inherit;
 }
+.text_hover_discover h2{
+    font-size: 1em;
+}
 .about_arequipa_container p{
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 2em 2em 1em;
+    text-align: center;
 }
 .box1_container{
-    padding: 1em 1em 5em;
+    padding: 0 1em 2em;
 }
 .box1_container h3{
     background-color: var(--primary-color);
-    margin: 3em 3em 0;
-    padding: 2em 3em 3em;
+    margin: 2em 3em;
+    padding: 2em 1em 3em;
     text-align: center;
     color: var(--accent3-color);
+    font-size: 1em;
+    border-radius: 25px 25px 0 0;
 }
 .box1_container picture{
     position: relative;
     top: -50px;
 }
-.box2_container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 1em 1em 5em;
-    text-align: center;
+.box1_container picture img{
+    border-radius: 50px 0;
 }
-
+.box2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 1em 5em;
+}
 .icon_box img{
-    width: 25%;
+    width: 100px;
+}
+.icon_box p{
+    margin: 0;
+    padding: 1em 2em;
+    font-size: 1.3em;
 }
 .introduction_gallery{
     margin: 2em;
@@ -510,7 +519,7 @@ footer{
 }
 .introduction_gallery p{
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
 }
 /* Styles for pictures */
 .gallery_container_box figure{
@@ -611,13 +620,14 @@ footer{
 
 .localstorage{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 3em 1em;
 }
 
 /* Join Us Style */
 #join-main{
     display: block;
+    margin: 1em;
 }
 #join-container{
     margin: 1em;
@@ -726,7 +736,7 @@ footer{
     text-align: center;
 }
 .directory_title{
-    margin: 5em;
+    margin: 5em 1em;
 }
 .directory_title p{
     margin-top: 2em;
@@ -754,9 +764,9 @@ footer{
 }
 .grid_container {
 	display: grid;
-    gap: 2em;
+    gap: 2em 3em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 2em;
+    margin: 1em;
 }
 .grid_container section {
 	flex-direction: column;

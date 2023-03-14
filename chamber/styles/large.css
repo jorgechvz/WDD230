@@ -146,13 +146,6 @@
     .footer_logo a img{
         width: 50%;
     }
-    .container_qlinks{
-        display: grid;
-        margin-left: 1em;
-    }
-    .container_qlinks a{
-        margin: 0 0 .5em 0;
-    }
     .social_container{
         width: 85%;
         margin-left: 1em;
@@ -172,25 +165,21 @@
     }
     @media screen and (max-width:1490px){
         .gallery_container_box figure .capa p{
-            font-size: 1em;
+            font-size: 1.2em;
         }
         .gallery_container_box figure .capa h3{
-            font-size: 1em;
+            font-size: 2em;
         }
-    }
-    .box1_container{
-        padding: 1em 1em 5em;
     }
     .box1_container h3{
         background-color: var(--primary-color);
-        margin: 3vw 15vw 0;
+        margin: 3vw 15vw;
         padding: 2em 3em 3em;
-        text-align: center;
         color: var(--accent3-color);
+        font-size: 1.5em;
     }
     .box1_container picture{
-        position: relative;
-        top: -50px;
+        top: -90px;
     }
     .box1_container picture img{
         width: 75%;
@@ -201,7 +190,7 @@
         font-size: 3em;
     }
     .introduction_gallery p{
-        margin: 3em;
+        margin: 2.5em;
     }
 
     /* Join Page Styles */
