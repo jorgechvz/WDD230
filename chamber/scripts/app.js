@@ -25,26 +25,20 @@ document.querySelector(".last_updated").innerHTML = new Date(document.lastModifi
 /* For the display Event only monday and tuesday */
 
 const eventSection = document.querySelector(".event_section");
-const mainSection = document.querySelector("main");
 const weatherSection = document.querySelector(".weather_section");
-const heroSection = document.querySelector(".hero_section");
 const newsSection = document.querySelector(".news_section");
-const spotlightSection = document.querySelector(".spotlight_section");
 const joinSection = document.querySelector(".join_section");
-const imageJoin = document.querySelector(".join_image");
 const currentDay = new Date().getDay();
 if(eventSection !== null){
-    if (currentDay !== 1 && currentDay !== 6) {
+    if (currentDay !== 1 && currentDay !== 2) {
         eventSection.style.display = "none";
     } else{
         weatherSection.classList.add('weather_section-grid');
-        heroSection.classList.add('hero_section-grid');
         newsSection.classList.add('news_section-grid');
-        spotlightSection.classList.add('spotlight_section-grid');
         joinSection.classList.add('join_section-grid');
-        mainSection.classList.add('main-grid');
     }
 }
+
 /* Lazyload */
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 const imagesOptions = {

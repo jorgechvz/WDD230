@@ -213,6 +213,7 @@ main section{
 .join-button:hover{
     background-color: var(--accent3-color);
     color: var(--primary-color);
+    border: 2px dashed var(--secundary-color);
 }
 .event_section{
     height: 300px;
