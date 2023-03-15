@@ -3,9 +3,10 @@
     {
       "name": "Super Foods",
       "address": "999 Main Street, Arequipa, Peru",
-      "phone": "+51 222222222",
+      "phone": "+51 956852159",
       "website": "https://www.superfoods.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/superfoods.png?raw=true",
+      "email": "superfoods@gmail.com",
       "membership": "bronze",
       "other_info": "Super Foods is a natural and organic foods retailer, offering a wide variety of healthy food options.",
       "banner": "Natural, Organic Foods Retailer"
@@ -13,9 +14,10 @@
     {
       "name": "Innovative Designs",
       "address": "888 Broad Street, Arequipa, Peru",
-      "phone": "+51 333333333",
+      "phone": "+51 933456933",
       "website": "https://www.innovativedesigns.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/innovative.png?raw=true",
+      "email": "innovative-designs@designs.com",
       "membership": "silver",
       "other_info": "Innovative Designs is a design and branding agency, providing creative solutions for businesses of all sizes.",
       "banner": "Creative Design Agency"
@@ -23,9 +25,10 @@
     {
       "name": "Global Trade Inc.",
       "address": "777 Main Street, Arequipa, Peru",
-      "phone": "+51 444444444",
+      "phone": "+51 945852159",
       "website": "https://www.globaltradeinc.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/globaltrade.png?raw=true",
+      "email": "tradeinc@global.com",
       "membership": "gold",
       "other_info": "Global Trade Inc. is an international trade and logistics company, providing supply chain solutions to businesses worldwide.",
       "banner": "International Trade & Logistics"
@@ -33,9 +36,10 @@
     {
       "name": "My Home Realty",
       "address": "666 Broad Street, Arequipa, Peru",
-      "phone": "+51 555555555",
+      "phone": "+51 950456875",
       "website": "https://www.myhomerealty.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/myhome.png?raw=true",
+      "email": "home-realty@realty.com",
       "membership": "free",
       "other_info": "My Home Realty is a full-service real estate agency, helping clients buy and sell homes in the Arequipa area.",
       "banner": "Full-Service Real Estate Agency"
@@ -43,9 +47,10 @@
     {
       "name": "Peak Performance Gym",
       "address": "555 Main Street, Arequipa, Peru",
-      "phone": "+51 666666666",
+      "phone": "+51 965849571",
       "website": "https://www.peakperformancegym.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/peakperformance.png?raw=true",
+      "email": "peakGym@performance.com",
       "membership": "silver",
       "other_info": "Peak Performance Gym is a fitness center offering a variety of exercise classes and equipment for all fitness levels.",
       "banner": "Fitness Center & Exercise Classes"
@@ -53,9 +58,10 @@
     {
       "name": "Tech Savvy Solutions",
       "address": "444 Broad Street, Arequipa, Peru",
-      "phone": "+51 777777777",
+      "phone": "+51 977587423",
       "website": "https://www.techsavvysolutions.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/techsavvy.png?raw=true",
+      "email": "tech-savwy@solutions.com",
       "membership": "gold",
       "other_info": "Tech Savvy Solutions is an IT consulting firm specializing in network security and cloud computing services.",
       "banner": "IT Consulting & Cloud Services"
@@ -66,6 +72,7 @@
       "phone": "+51 987654321",
       "website": "https://www.abc.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/abc.png?raw=true",
+      "email": "abc@company.com",
       "membership": "free",
       "other_info": "ABC Company is a software development company specializing in web and mobile applications.",
       "banner": "Web & Mobile App Development"
@@ -73,9 +80,10 @@
     {
       "name": "XYZ Corporation",
       "address": "456 Broad Street, Arequipa, Peru",
-      "phone": "+51 555555555",
+      "phone": "+51 915478596",
       "website": "https://www.xyzcorp.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/xyz.png?raw=true",
+      "email": "xyz@corporation.com",
       "membership": "silver",
       "other_info": "XYZ Corporation is a global consulting firm providing business strategy and IT solutions.",
       "banner": "Business Strategy & IT Consulting"
@@ -83,9 +91,10 @@
     {
       "name": "123 Inc.",
       "address": "789 Main Street, Arequipa, Peru",
-      "phone": "+51 777777777",
+      "phone": "+51 921547832",
       "website": "https://www.123inc.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/123.png?raw=true",
+      "email": "123inc@inc.com",
       "membership": "gold",
       "other_info": "123 Inc. is a leading provider of cloud-based business management solutions for small and medium-sized enterprises.",
       "banner": "Cloud-Based Business Management Solutions"
@@ -93,9 +102,10 @@
     {
       "name": "Acme Co.",
       "address": "555 Broad Street, Arequipa, Peru",
-      "phone": "+51 222222222",
+      "phone": "+51 935641521",
       "website": "https://www.acmeco.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/acme.png?raw=true",
+      "email": "acme-admin@acmeco.com",
       "membership": "bronze",
       "other_info": "Acme Co. is a manufacturer of innovative products for the consumer and industrial markets.",
       "banner": "Innovative Product Manufacturer"
@@ -103,9 +113,10 @@
     {
       "name": "GHI Industries",
       "address": "444 Main Street, Arequipa, Peru",
-      "phone": "+51 333333333",
+      "phone": "+51 945685123",
       "website": "https://www.ghiindustries.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/ghi.png?raw=true",
+      "email": "ghi@industries.com",
       "membership": "free",
       "other_info": "GHI Industries is a supplier of high-quality raw materials and chemicals for the manufacturing industry.",
       "banner": "Industrial Solutions Provider"
@@ -113,9 +124,10 @@
     {
       "name": "PQR Services",
       "address": "222 Broad Street, Arequipa, Peru",
-      "phone": "+51 444444444",
+      "phone": "+51 945856661",
       "website": "https://www.pqrservices.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/pqr.png?raw=true",
+      "email": "pqr-services@services.com",
       "membership": "bronze",
       "other_info": "PQR Services provides professional consulting and advisory services for businesses in the finance and accounting sectors.",
       "banner": "Financial Success Starts Here"
@@ -123,9 +135,10 @@
     {
       "name": "LMN Solutions",
       "address": "333 Main Street, Arequipa, Peru",
-      "phone": "+51 111111111",
+      "phone": "+51 911225633",
       "website": "https://www.lmnsolutions.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/lmn.png?raw=true",
+      "email": "lmn-solutions@lmn.com",
       "membership": "silver",
       "other_info": "LMN Solutions offers comprehensive IT services and support for businesses of all sizes.",
       "banner": "Unleash Your Business Potential"
@@ -133,9 +146,10 @@
     {
       "name": "EFG Inc.",
       "address": "777 Broad Street, Arequipa, Peru",
-      "phone": "+51 666666666",
+      "phone": "+51 978566695",
       "website": "https://www.efginc.com",
       "image": "https://github.com/jorgechvz/WDD230/blob/master/chamber/images/directory/efg.png?raw=true",
+      "email": "efginc@einc.com",
       "membership": "gold",
       "other_info": "EFG Inc. is a leading provider of advanced engineering and manufacturing services for the aerospace and defense industries.",
       "banner": "Innovative Solutions for Defense"
