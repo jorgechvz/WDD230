@@ -29,7 +29,7 @@ function displayData(weatherData){
   let windSpeedValue = parseFloat(weatherData.wind.speed.toFixed(2));
   // Display Weather Card
   weatherContainer.innerHTML = `
-    <h3>Weather</h3>
+    <h2>Weather</h2>
     <img class="weatherIcon" src="${iconsrc}" alt="${desc}">
     <p class="temperature"><strong>${weatherData.main.temp.toFixed(0)}</strong><span>&deg;C</span></p>
     <p class="weather_time">${capitalizeWords(desc)}</p>

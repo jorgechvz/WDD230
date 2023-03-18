@@ -1,5 +1,5 @@
 // Global Variables
-const urlData = "https://raw.githubusercontent.com/jorgechvz/WDD230/master/chamber/JSON/data.json";
+const urlData = "https://raw.githubusercontent.com/jorgechvz/WDD230/master/chamber/json/data.json";
 
 // Global Functions
 function capitalize(word) {
@@ -216,7 +216,7 @@ if (window.location.pathname.includes("/chamber/index.html")){
       let divSpot = document.createElement('div') 
       divSpot.className = `spotlight${index+1}`;
       divSpot.innerHTML = `
-        <h3>${spotItem.name}</h3>
+        <h2>${spotItem.name}</h2>
         <img src="${spotItem.image}" alt="${spotItem.name} Logo Image">
         <p>"${spotItem.banner}"</p>
         <hr>
