@@ -855,7 +855,7 @@ main section, .spotlight_section{
 /* ------------------------------------------------------ */
 /* Contact Page Styles */
 .container_contact{
-    display: inline-block;
+    display: block;
     margin: 3em 1em 5em;
 }
 .board-information{
@@ -924,7 +924,7 @@ main section, .spotlight_section{
     transform: translateY(-5px);
 }
 .sendBtn-camp{
-    width: calc(50%);
+    width: calc(70%);
     margin: auto;
 }
 .info_contact_container{
