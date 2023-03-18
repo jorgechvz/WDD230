@@ -192,7 +192,6 @@
     #join-main{
         display: grid;
         grid-template-columns: 50% 50%;
-        column-gap: 1em;
         row-gap: 2em;
     }
     .join-container{
@@ -203,7 +202,7 @@
         grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 2em 3em 15em 2em;
+        padding: 2em 2em 15em 3em;
         text-align: center;
         column-gap: 1em;
     }
@@ -215,6 +214,18 @@
     }
     .membership-gold .membership-details{
         top: 40%;
+    }
+    .membership-free:hover{
+        height: 300px;
+    }
+    .membership-bronze:hover{
+        height: 350px;
+    }
+    .membership-silver:hover{
+        height: 380px;
+    }
+    .membership-gold:hover{
+        height: 400px;
     }
     #join-form-container{
         margin: 3em 2em 5em;
