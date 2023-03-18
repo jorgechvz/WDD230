@@ -928,7 +928,7 @@ main section, .spotlight_section{
     margin: auto;
 }
 .info_contact_container{
-    padding: 3em;
+    padding: 3em 1.5em;
     grid-column: 1/2;
     grid-row: 2/3;
     border: 2px solid var(--secundary-color);
