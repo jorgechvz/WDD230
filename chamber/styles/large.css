@@ -213,7 +213,13 @@
         min-width: 250px;
     }
     .membership-gold .membership-details{
-        top: 40%;
+        top: 38%;
+    }
+    .membership-silver .membership-details{
+        top: 45%;
+    }
+    .membership-bronze .membership-details{
+        top: 45%;
     }
     .membership-bronze:hover{
         height: 380px;
@@ -222,7 +228,7 @@
         height: 420px;
     }
     .membership-gold:hover{
-        height: 450px;
+        height: 460px;
     }
     #join-form-container{
         margin: 3em 2em 5em;
