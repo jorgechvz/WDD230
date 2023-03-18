@@ -258,7 +258,7 @@ main section, .spotlight_section{
     top: 0;
     left: 0;
     padding: 1em;
-    font-size: 2bem;
+    font-size: 2em;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
