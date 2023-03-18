@@ -1,5 +1,5 @@
 // Global Variables
-const urlData = "https://raw.githubusercontent.com/jorgechvz/WDD230/master/chamber/json/data.json";
+const urlData = "https://raw.githubusercontent.com/jorgechvz/WDD230/master/chamber/JSON/data.json";
 
 // Global Functions
 function capitalize(word) {
