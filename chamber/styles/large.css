@@ -1,4 +1,6 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+    /* ------------------------------------------------------ */
+    /* Navbar */
     #hamburgerBtn{
         visibility: hidden;
     }
@@ -9,7 +11,7 @@
         display: flex;
         justify-content: space-between;
     }
-    header img, footer img{
+    header img{
         width: 100px;
     }
     nav ul{
@@ -30,23 +32,44 @@
         font-size: 1.2em;
         letter-spacing: 1px;
     }
+
+    /* ------------------------------------------------------ */
+    /* Footer */
+    .first_section_container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .footer_logo{
+        display: flex;
+        align-items: center;
+    }
+    .footer_logo a img{
+        width: 50%;
+    }
+    .social_container{
+        width: 85%;
+        margin-left: 1em;
+    }
+    .social_container a img{
+        width: 60%;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/ 
+    /* Home Page Styles */
+    /* Main Section */
     #index-main{
         margin: 2em;
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
-    #index-main section{
-        height: 100%;
-    }
     .hero_section{
         grid-column: 2/4;
         grid-row: 1/3;
-        width: 100%;
     }
     .hero_section h3{
-        font-size: 3em;
-        left: 5%;
-        right: 5%;
+        font-size: 2.7em;
+        top: 25px;
+        left: 8.5%;
+        right: 2%;
     }
     .event_section{
         grid-column: 1/2;
@@ -60,22 +83,13 @@
         grid-column: 1/4;   
         grid-row: 3/4;
         font-size: 120%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     .news_section h3{
         margin: 0;
     }
-    .news_section p{
-        margin-top: 1.5em;
-    }
     .join_section{
         grid-row: 2/3;
         grid-column: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     .join_section h3{
         width: 100%;
@@ -86,11 +100,8 @@
         grid-row: 1/4;
         gap: .5em;
     }
-    .spotlight_section div{
-        max-height: 100%;
-    }
     .spotlight_section{
-        font-size: 75%;
+        font-size: 80%;
     }
     .spotlight_section div p{
         font-size: 1.3em;
@@ -134,25 +145,8 @@
         grid-row: 3/4;
         grid-column: 2/4;
     }
-    /* Footer */
-    .first_section_container{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-    .footer_logo{
-        display: flex;
-        align-items: center;
-    }
-    .footer_logo a img{
-        width: 50%;
-    }
-    .social_container{
-        width: 85%;
-        margin-left: 1em;
-    }
-    .social_container a img{
-        width: 60%;
-    }
+    
+    /* ------------------------------------------------------ */
     /* Discover Page */
     .text_hover_discover{
         font-size: 1.5em;
@@ -193,37 +187,53 @@
         margin: 2.5em;
     }
 
+    /* ------------------------------------------------------ */
     /* Join Page Styles */
     #join-main{
-        display: block;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1em;
+        row-gap: 2em;
     }
-    #join-container{
-        margin: 5em 3em;
+    .join-container{
+        grid-column: 1/3;
         text-align: center;
     }
-    #join-container h1{
-        padding: 0 4em;
-    }
     #membership-cards-container{
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 5em 2em 10em;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2em 3em 15em 2em;
         text-align: center;
         column-gap: 1em;
     }
-    .membership-block div h2, .membership-block div h3{
-        font-size: 2em;
+    #membership-cards-container h2{
+        grid-column: 1/3;
+    }
+    .membership-block{
+        min-width: 250px;
+    }
+    .membership-gold .membership-details{
+        top: 40%;
+    }
+    #join-form-container{
+        margin: 3em 2em 5em;
+        padding: 3em 1em;
     }
     .join-form{
-        margin: 0 10em;
+        margin: 0 3em;
     }
     .camp .joinBtn{
         width: 70%;
     }
+
+    /* ------------------------------------------------------ */
     /* Thank You Styles */
     #thank-main{
         margin: 7em;
     }
+
+    /* ------------------------------------------------------ */
     /* Directory Page Styles */
     .list_container section div{
         display: grid;
@@ -232,5 +242,46 @@
         padding: 0.25rem;
         text-align: left;
         align-items: center;
+    }
+
+    /* ------------------------------------------------------ */
+    /* Contact Page Styles */
+    .container_contact{
+        display: grid;
+        grid-template-columns: 38% 60%;
+        margin: 5em 7em 5em;
+        gap: 3em 0em;        
+    }
+    .info_contact_container, .form-contact{
+        margin: 0;
+    }
+    .board-information{
+        padding: 1em 5em;
+    }
+    .directory-contacts{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .board_directory{
+        grid-column: 1/3;
+    }
+    .info_contact_container{
+        padding: 1em;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .form-contact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1em;
+    }
+    .form-contact h2{
+        grid-column: 1/3;
+    }
+    .companyName-container, .questions-container, .sendBtn-camp{
+        grid-column: 1/3;
     }
 }   

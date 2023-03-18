@@ -35,21 +35,29 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="header_time"></div>
     </header>
-    <main id="join-main">       
-        <div id="join-container">
-            <h1>Join our Arequipa Chamber of Commerce and discover everything city has to offer</h1>
-            <h2>Join us by selecting a membership</h2>
-        </div>
+    <main id="join-main">
+        <div id="hero_discover" class="join-container">
+            <picture>
+                <img class="hero_image_discover" src="images/placeholders/placeholder-hoverdiscovery.png" data-src="images/banner_join.jpg" alt="Discover pages hover image">
+            </picture>
+            <div class="text_hover_discover">
+                <h1>Join our Arequipa Chamber of Commerce and discover everything city has to offer</h1>
+            </div>
+        </div>     
         <div id="membership-cards-container">
+            <h2>Join us by selecting a membership</h2>
             <div class="membership-block membership-free">
-                <div>
-                    <h2>Basic</h2>
-                    <h3>Free</h3>
-                    <ul>
+                <div class="container-card">
+                    <div class="membership-info">
+                        <h2>Basic</h2>
+                        <h3>Free</h3>
+                    </div>
+                    <ul class="membership-details">
                         <li>&check; Access to limited exclusive resources and content</li>
                         <li>&check; Monthly newsletter subscription</li>
                         <li>&check; Discounts on select events</li>
@@ -58,10 +66,12 @@
                 <button class="select-membership" data-membership="Basic">Select</button>
             </div>
             <div class="membership-block membership-bronze">
-                <div>
-                    <h2>Bronze</h2>
-                    <h3>$20/<span class="price-month">mon</span></h3>
-                    <ul>
+                <div class="container-card">
+                    <div class="membership-info">
+                        <h2>Bronze</h2>
+                        <h3>$20/<span class="price-month">mon</span></h3>
+                    </div>
+                    <ul class="membership-details">
                         <li>&check; Full access to exclusive content</li>
                         <li>&check; Monthly newsletter subscription</li>
                         <li>&check; Discounts on select events and restaurants</li>
@@ -72,10 +82,12 @@
                 <button class="select-membership" data-membership="Bronze">Select</button>
             </div>
             <div class="membership-block membership-silver">
-                <div>
-                    <h2>Silver</h2>
-                    <h3>$50/<span class="price-month">mon</span></h3>
-                    <ul>
+                <div class="container-card">
+                    <div class="membership-info">
+                        <h2>Silver</h2>
+                        <h3>$50/<span class="price-month">mon</span></h3>
+                    </div>
+                    <ul class="membership-details">
                         <li>&check; Full access to exclusive content</li>
                         <li>&check; Monthly newsletter subscription</li>
                         <li>&check; Discounts on select events, restaurants and shops</li>
@@ -87,10 +99,12 @@
                 <button class="select-membership" data-membership="Silver">Select</button>
             </div>
             <div class="membership-block membership-gold">
-                <div>
-                    <h2>Gold</h2>
-                    <h3>$100/<span class="price-month">mon</span>   </h3>
-                    <ul>
+                <div class="container-card">
+                    <div class="membership-info">
+                        <h2>Gold</h2>
+                        <h3>$100/<span class="price-month">mon</span></h3>
+                    </div>
+                    <ul class="membership-details">
                         <li>&check; Full access to exclusive content</li>
                         <li>&check; Monthly newsletter subscription</li>
                         <li>&check; Discounts on select events, restaurants and shops</li>
@@ -131,7 +145,12 @@
                 </div>
                 <div class="camp">
                     <label for="membership-level">Membership Level</label>
-                    <input type="text" id="membership-level" name="membership-level" readonly>
+                    <select id="membership-level" name="membership-level">
+                        <option value="Basic">Basic</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
                 </div>
                 <div class="camp">
                     <label for="business-description">Business Description</label>
@@ -159,7 +178,7 @@
                     <hr>
                 </div>  
                 <div class="information_text">
-                    <p>+51 923 123 432</p>
+                    <p>(01) 2345678</p>
                     <p><a href="mailto:contact-speedeatst@speedeats.com">aqpchamber@acofc.com.pe</a></p>
                     <a href="https://goo.gl/maps/ELCD3wGwHTDVeLs89">La Merced 101, Arequipa - Peru</a>
                 </div>
@@ -174,7 +193,8 @@
                     <p><a href="discover.html">Discover</a></p>
                     <p><a href="directory.html">Directory</a></p>
                     <p><a href="join.html">Join Us</a></p>
-                    <p><a href="join.html">OpenWeatherMap</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
                 </div>
             </div>
             <div class="social_container_global">

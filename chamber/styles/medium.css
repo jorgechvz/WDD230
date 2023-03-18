@@ -1,4 +1,30 @@
 @media screen and (min-width: 768px) {
+    /* Footer all Pages*/
+    .first_section_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1em;
+    }
+    .quick_links_container{
+        margin: 0 0 1em;
+    }
+    .container_qlinks p{
+        margin: .5em 0;
+    }
+    .second_section_container{
+        display: flex;
+        justify-content: center;
+    }
+    .second_section_container p{
+        margin-left: 0.5em;
+    }
+    .span_section2{
+        display: inline-block;
+    }
+
+    /* ------------------------------------------------------ */
+    /* Home Page Styles */
+    /* Main Section */
     #index-main{
         display: grid;
         grid-template-columns: 60% 38.5%;
@@ -6,24 +32,23 @@
     .hero_section, .news_section, .spotlight_section, .join_section{
         grid-column: 1/3;
     }
-    .hero_section{
-        width: 100%;
-        height: 100%;
+    .hero_section h3{
+        font-size: 2.5em;
     }
     .news_section{
         grid-row: 2/3;
         padding: 0 2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         font-size: 100%;
     }
     .spotlight_section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        height: 100%;
         gap: 1em;
         grid-row: 3/4;
+        max-width: 100%;
+    }
+    .spotlight_section div{
+        max-width: 100%;
     }
     .weather_section{
         grid-column: 1/3;
@@ -36,11 +61,17 @@
     .join_section{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         grid-row: 4/5;
+        border-radius: 20px;
+        background-color: var(--accent1-color);
+        color: var(--accent2-color);
+        height: 100%;
+        text-align: center;     
     }
     .join_section a{
         padding: .5em 0;
-        width: 90%;
+        width: 70%;
         margin: 0 auto 1em;
         border: none;
         border-radius: 20px;
@@ -58,37 +89,11 @@
         border: 2px dashed var(--accent3-color);
         color: var(--accent3-color);
     }
-    .event_section{
-        height: 100%;
-    }
     .event_section img{
         max-width: 80%;
     }
-    /* Footer */
-    footer{
-        text-align: left;
-    }
-    .first_section_container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 1em;
-    }
-    .quick_links_container{
-        margin:0 0 1em;
-    }
-    .container_qlinks p{
-        margin: .5em 0;
-    }
-    .second_section_container{
-        display: flex;
-        justify-content: center;
-    }
-    .second_section_container p{
-        margin-left: 0.5em;
-    }
-    .span_section2{
-        visibility: visible;
-    }
+
+    /* ------------------------------------------------------ */
     /* Discover Page */
     .text_hover_discover{
         font-size: 1.3em;
@@ -132,32 +137,60 @@
         margin: 2.5em;
         font-size: 1.5em;
     }
+
+    /* ------------------------------------------------------ */
     /* Join Page Styles */
-    
-    #join-container{
+    .join-container{
         margin: 5em 3em;
         text-align: center;
     }
     #membership-cards-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2em 2em 3em;
         text-align: center;
     }
+    #membership-cards-container h2{
+        grid-column: 1/3;
+    }
+    #join-form-container{
+        margin: 2em 7em;
+        padding: 1em;
+    }
     .join-form{
-        margin: 0 5em;
+        margin: 0 1em;
     }
     .camp .joinBtn{
         width: 80%;
     }
+
+    /* ------------------------------------------------------ */
     /* Thankyou Page Styles */
     #thank-main figure img{
         width: 350px;
     }
 
+    /* ------------------------------------------------------ */
     /* Directory Page Styles */
     .directory_title{
         margin: 5em;
     }
+    
+    /* ------------------------------------------------------ */
+    /* Contact Page Styles */
+    .directory-contacts{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 1em 2em;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_contact_container, .form-contact{
+        margin: 0 5em;
+    }
+    .modal-content{
+        width: 45%;
+    }
+    
 }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge A. Chavez">
+    <meta name="description" content="Chamber of Commerce - Home Page - WDD 230 - BYU-Idaho">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Arequipa Chamber of Commerce | Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="containerLogo">
+                    <img src="images/logo3_1.webp" alt="Arequipa Chamber Logo">
+                    <div>
+                        <p class="titleArequipa">AREQUIPA</p>
+                        <p class="titleChamber">Chamber Of Commerce</p>
+                    </div>
+                </a>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_time"></div>
+    </header>
+    <main id="main-contact">
+        <div id="hero_discover">
+            <picture>
+                <img class="hero_image_discover" src="images/placeholders/placeholder-hoverdiscovery.png" data-src="images/contact/banner-contact.jpg" alt="Discover pages hover image">
+            </picture>
+            <div class="text_hover_discover">
+                <h1>Contact us today!</h1>
+            </div>
+        </div>
+        <div class="container_contact">
+            <div class="board_directory">
+                <div class="board-information">
+                    <h2>Board of Directors</h2>
+                    <p>Our Board of Directors is composed of esteemed members of our community who are dedicated to advancing the interests of local businesses. Please feel free to contact them with any questions or concerns.</p>
+                </div>
+                <div class="directory-contacts">
+                    <div>
+                        <p class="directory-charge">Co-President</p>
+                        <picture>
+                            <img src="images/placeholders/placeholder-imageslider.png" data-src="images/contact/maria-gonzales-profile.jpg" alt="Maria Gonzales Profile">
+                        </picture>
+                        <p>Maria Gonzales</p>
+                        <p>+51 987654321</p>
+                    </div>
+                    <div>
+                        <p class="directory-charge">President</p>
+                        <picture>
+                            <img class="president-image" src="images/placeholders/placeholder-imageslider.png" data-src="images/contact/juan-perez-profile.jpg" alt="Juan Perez Profile">
+                        </picture>
+                        <p>Juan Peréz</p>
+                        <p>+51 976543210</p>
+                    </div>
+                    <div>
+                        <p class="directory-charge">Vice President</p>
+                        <picture>
+                            <img src="images/placeholders/placeholder-imageslider.png" data-src="images/contact/carlos-gutierrez-profile.jpg" alt="Carlos Gutierres Profile">
+                        </picture>
+                        <p>Carlos Gutierrez</p>
+                        <p>+51 912345444</p>
+                    </div>
+                </div>
+            </div>
+            <form action="get" class="form-contact" onsubmit="scrollToTop()">
+                <h2>Get in touch</h2>
+                <div class="camp contact-camp name-container">
+                    <label class="label-requiered" for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Name">
+                </div>
+                <div class="camp contact-camp address-container">
+                    <label class="label-requiered" for="email-address">Email Address</label>
+                    <input type="text" id="email-address" name="email-address" placeholder="example@example.com" required>
+                </div>
+                <div class="camp contact-camp companyName-container">
+                    <label class="label-requiered" for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Company Name" required>
+                </div>
+                <div class="camp contact-camp questions-container">
+                    <label for="questions-chamber" re>What questions do you have for the Arequipa Chamber?</label>
+                    <textarea name="questions-chamber" id="questions-chamber" placeholder="Message"></textarea>
+                </div>
+                <div class="camp sendBtn-camp">
+                    <input class="sendBtn" type="submit" value="Send Message">
+                </div>
+            </form>
+            <div class="info_contact_container">
+                <h2>Let's get in Touch</h2>
+                <p>We're open for any suggestion or just to have a chat</p>
+                <div class="container_info-address">
+                    <img src="images/contact/address-icon.png" alt="Address Icon">
+                    <p><span class="span-contact">Address: </span>La Merced 101, Arequipa - Peru</p> 
+                </div>
+                <div class="container_info-schedule">
+                    <img src="images/contact/schedule.png" alt="Schedule Icon">
+                    <div class="schedule-information">
+                        <p><span class="span-contact">Monday - Thursday: </span>8:00 a.m. to 5:00 p.m.</p>
+                        <p><span class="span-contact">Friday - Sunday: </span>Closed</p>
+                    </div> 
+                </div>
+                <div class="container_info-address">
+                    <img src="images/contact/email-icon.png" alt="Address Icon">
+                    <p><span class="span-contact">Email: </span>aqpchamber@acofc.com.pe</p> 
+                </div>
+                <div class="container_info-address">
+                    <img src="images/contact/phone-icon.png" alt="Address Icon">
+                    <p><span class="span-contact">Phone: </span> (01) 2345678</p> 
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <p>Message sent. Thank you!</p>
+              <img src="images/contact/sent-message.png" alt="Sent Message Icon">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="first_section_container">
+            <div class="footer_logo">
+                <a href="index.html">
+                    <img src="images/logo1.webp" alt="Arequipa Chamber Logo">
+                </a>
+            </div>
+            <div class="information_container">  
+                <div>
+                    <h3>Contact</h3>
+                    <hr>
+                </div>  
+                <div class="information_text">
+                    <p>(01) 2345678</p>
+                    <p><a href="mailto:contact-speedeatst@speedeats.com">aqpchamber@acofc.com.pe</a></p>
+                    <a href="https://goo.gl/maps/ELCD3wGwHTDVeLs89">La Merced 101, Arequipa - Peru</a>
+                </div>
+            </div>
+            <div class="quick_links_container">
+                <div>
+                    <h3>Quick Links</h3>
+                    <hr>
+                </div>
+                <div class="container_qlinks">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="discover.html">Discover</a></p>
+                    <p><a href="directory.html">Directory</a></p>
+                    <p><a href="join.html">Join Us</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+                </div>
+            </div>
+            <div class="social_container_global">
+                <div>
+                    <h3>Connect With Us</h3>
+                    <hr>
+                </div>
+                <div class="social_container">
+                    <a href="https://es-la.facebook.com/" target="_blank" title="facebook iconos">
+                        <img src="images/facebook.png" alt="facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank">
+                        <img src="images/twitter.png" alt="Twitter icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jorge-alberto-chavez-ponce-5145b3101/" target="_blank">
+                        <img src="images/linkedin.png" alt="Linkedin Icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="second_section_container">
+            <p>&copy; <span class="copyright_year"></span> Arequipa Chamber <span class="span_section2">|</span></p>  
+            <p>Jorge A. Chavez <span class="span_section2">|</span></p> 
+            <p>WDD 230 Project <span class="span_section2">|</span></p> 
+            <p>Last Modification: <span class="last_updated"></span></p> 
+        </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
