@@ -506,10 +506,10 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     border: 1px solid var(--primary-color);
     border-radius: 20px;
+    align-items: center;
 }
 .about-contact picture img{
     width: 100%;
-    height: 100%;
     border-radius: 20px;
 }
 .about-contact div{
