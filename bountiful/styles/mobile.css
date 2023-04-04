@@ -1,0 +1,95 @@
+@media only screen and (max-width: 720px){
+    /* Navbar */
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em 1em;
+    }
+    .contact-information-header{
+        padding: .5em;
+    }
+    .contact-information-header p span{
+        display: none;
+    }
+    .nav-links{
+        width: 60%;
+    }
+    /* Footer */
+    footer{
+        display: block;
+        padding: 2em;
+        word-wrap: break-word;
+    }
+    .about_company{
+        grid-column: 1/3;
+        display: block;
+    }
+    .about_company, .contact_footer, .quick_links{
+        padding: 0;
+    }
+    .about_company img{
+        max-width: 150px;
+    }
+    .copyright{
+        padding-top: 1em;
+    }
+    .copyright hr{
+        width: 100%;
+    }
+    /* Home Page */
+    .title_container{
+        padding: 1em;
+    }
+    .title_hero-home hr{
+        width: 80%;
+    }
+    .information_coastal_area{
+        margin: 0;
+        padding: 2em;
+    }
+    .information_coastal_area h2{
+        padding: 2em 0 .5em;
+    }
+    .santamonica_img{
+        width: 100%;
+    }
+    .see-more, .see-less{
+        display: inline-block;
+        color: var(--primary-color);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .paragraph-hide{
+        display: none;
+    }
+    /* Fresh Page */
+    #order-form{
+        margin: 1em .5em;
+    }
+    .order-summary{
+        display: block;
+    }
+    .order-summary div{
+        margin-top: 1em;
+    }
+    /* About us Page */
+    .our-history,
+    .about-area{
+        padding: 2em 1.5em;
+    }
+    .our-commitment .value{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .about-contact{
+        margin: 2em 1.5em;
+        display: block;
+    }
+    .about-contact div{
+        padding: 1em;
+    }
+    .about-contact div div{
+        padding: 0;
+    }
+}

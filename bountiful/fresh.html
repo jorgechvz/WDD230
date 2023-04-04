@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge A. Chavez">
+    <meta name="description" content="Bountiful Foods - Fresh Page - WDD 230 - BYU-Idaho">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Styles Sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <title>Bountiful Foods | Fresh Page</title>
+</head>
+<body>
+    <header>
+        <div class="contact-information-header">
+            <a href="">
+                <p><img src="images/icons8-gmail.svg" alt="Email Icon"><span>info@bountifulfoods.com</span></p>
+            </a>
+            <a href="">
+                <p><img src="images/phone-icon.svg" alt="Phone Icon"><span>(310) 555-1234</span></p>
+            </a>
+        </div>
+        <nav class="navbar-container">
+            <div class="hideLogo-container"></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <div class="logo_container">
+                    <img class="logo_img" src="images/logo_boutiful_foods.svg" alt="Bountiful Logo Header">
+                </div>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-fresh">
+        <div class="fresh-cover">
+            <h1>Refresh your day with our juices!</h1>
+            <h2>Customize your juice with 3 fruits</h2>
+            <picture>
+                <img class="fresh-img-cover" src="images/placeholders/image-hover.png" data-src="images/fresh/fresh-cover.png" alt="Fresh Juice Cover Photo">
+            </picture>
+        </div>
+        <form id="order-form">
+            <div class="camp first-name_camp">
+                <label for="first-name">Name: </label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="camp email_camp">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="camp phone_camp">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="camp fruit1_camp">
+            <label for="fruit1">Select Fruit 1:</label>
+                <select id="fruit1" name="fruit1" required>
+                    <option value="">--Select Fruit--</option>
+                </select>
+                <span class="error" id="fruit1-error"></span>
+            </div>
+            <div class="camp fruit2_camp">
+                <label for="fruit2">Select Fruit 2:</label>
+                <select id="fruit2" name="fruit2" required>
+                    <option value="">--Select Fruit--</option>
+                </select>
+                <span class="error" id="fruit2-error"></span>
+            </div>
+            <div class="camp fruit3_camp">
+                <label for="fruit3">Select Fruit 3:</label>
+                <select id="fruit3" name="fruit3" required>
+                    <option value="">--Select Fruit--</option>
+                </select>
+                <span class="error" id="fruit3-error"></span>
+            </div>
+            <div class="camp special-instructions_camp">
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea>
+            </div>
+            <button id="submit-button" type="submit">Submit Order</button>
+        </form>
+        <div class="order-summary"></div>
+    </main>
+    <footer>
+        <div class="about_company">
+            <img src="images/logo_boutiful_foods.svg" alt="">
+            <p>Bountiful Foods mission is to provide fresh and healthy food options, including made-to-order fruit drinks, to the local community and tourists visiting the coastal areas. </p>
+            <div class="social_network">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook.svg" alt="Facebook Icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter.svg" alt="Twitter Icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram.svg" alt="Instagram Icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/icons8-linkedin.svg" alt="Linkedin Icon"></a>
+            </div>
+        </div>
+        <div class="contact_footer">
+            <h3>Contact</h3>
+            <div>
+                <p><a href=""><img src="images/icons8-gmail.svg" alt=""> info@bountifulfoods.com</a></p>
+                <p><a href=""><img src="images/icons8-google-maps.svg" alt=""> 123 Main Street, Santa Monica, California 90401</a></p>
+                <p><a href=""><img src="images/phone-icon.svg" alt=""> (310) 555-1234</a></p>
+            </div>
+        </div>
+        <div class="quick_links">
+            <h3>Quik Links</h3>
+            <div>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="fresh.html">Fresh</a></p>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="year_copyright"></span> Bountiful Foods. Inc. All right reserved</p>
+            <hr>
+            <p>Jorge A. Chavez</p>
+            <p class="last_modified"></p>
+        </div>
+    </footer>
+    <script src="scripts/bountiful.js"></script>
+    <script src="scripts/fresh.js"></script>
+</body>
+</html>
