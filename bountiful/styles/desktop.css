@@ -98,7 +98,8 @@ header{
     color: var(--accent4-color);
     font-weight: bold;
 }
-.nav-links a:hover, .nav-links a.active{
+.nav-links a:hover, 
+.nav-links a.active{
     background-color: var(--secondary-color);
     border-radius: 0 25px 0 25px;
 }
@@ -512,10 +513,11 @@ footer{
     width: 100%;
     border-radius: 20px;
 }
-.about-contact div{
+.about-contact .about-contact_container{
     background-color: var(--primary-color);
     border-radius: 20px;
     padding: 2em;
+    height: 100%;
 }
 .about-contact div hr{
     border: 2px solid var(--accent4-color);
@@ -536,4 +538,53 @@ footer{
 }
 .social_network img{
     margin: auto;
+}
+/* Contact Page */
+#contact-main{
+    margin: 3em 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.contact-main_title{
+    margin: auto;
+}
+.contact-main_title img{
+    margin: auto;
+    max-width: 500px;
+}
+.form-contact{
+    padding: 2em 3em;
+}
+.camp_contact-form{
+    margin: 1em 0;
+}
+.camp_contact-form input, .camp_contact-form textarea{
+    width: 100%;
+    outline: none;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid var(--accent4-color);
+}
+.camp_contact-form textarea{
+    height: 200px;
+}
+.camp_contact-form input:focus,
+.camp_contact-form textarea:focus{
+    box-shadow: 2px 2px 2px 2px var(--primary-color);
+}
+.btn_contact{
+    cursor: pointer;
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+.btn_contact:hover{
+    background-color: var(--secondary-color);
+}
+.message-submit{
+    margin-top: 1em;
+    padding: 1em 2em;
+    border: 2px solid #FFA500;
+    border-radius: 20px;
 }

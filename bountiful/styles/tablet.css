@@ -8,6 +8,7 @@
     }
     .nav-links{
         position: absolute;
+        z-index: 2;
         left: 0;
         top: 11em;
         max-height: 110%;
@@ -88,10 +89,10 @@
         display: block;
     }
     .title_container{
-        padding: 0 2em;
+        padding: 0em 2em;
     }
     .title_hero-home{
-        padding-top: 2em;
+        padding-top: 5em;
         padding-left: 0;
         text-align: center;
         margin: 0 auto 1em;
@@ -147,6 +148,13 @@
     }
     .our-commitment .value{
         justify-content: space-between;
+    }
+    /* Contact Page */
+    .contact-main_title{
+        margin-top: 3em;
+    }
+    .contact-main_title img{
+        margin-top: 2em;
     }
     
 }

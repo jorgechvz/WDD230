@@ -13,7 +13,7 @@
         display: none;
     }
     .nav-links{
-        width: 60%;
+        width: 100%;
     }
     /* Footer */
     footer{
@@ -91,5 +91,21 @@
     }
     .about-contact div div{
         padding: 0;
+    }
+    /* Contact Page */
+    #contact-main{
+        display: block;
+        margin: 2em;
+    }
+    .contact-main_title{
+        margin-top: 7em;
+    }
+    .form-contact{
+        position: relative;
+        padding: 0;
+    }
+    .message-submit{
+        display: block;
+        padding: 1em .5em;
     }
 }

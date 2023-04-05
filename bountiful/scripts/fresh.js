@@ -5,7 +5,6 @@ const urlFreshData = "https://brotherblazzard.github.io/canvas-content/fruit.jso
 fetch(urlFreshData)
 	.then(response => response.json())
 	.then(data => {
-        console.log(data);
 		// Add the fruits to the select elements
 		fruitsData(data);
         // Add the submit event listener to the form

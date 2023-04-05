@@ -111,7 +111,6 @@ fetch(current_weather_url)
     const humidity = data.main.humidity;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
-    console.log(data);
     if (currentWeather){
       currentWeather.innerHTML = `
         <h3>${capitalizeWords(data.name)}, ${data.sys.country}</h3>
@@ -127,7 +126,6 @@ fetch(current_weather_url)
 fetch(forecast_weather_url)
   .then(response => response.json())
   .then(data => {
-    console.log(data);
     const forecastsToShow = [8, 16, 24]; 
     // Create the list of forecasts that will be displayed on the page
     const forecastList = forecastsToShow.map(index => {
@@ -167,25 +165,25 @@ function seeParagraph() {
   }
 }
 function addEvent(){
-    if (window.innerWidth < 720){
+  if (window.innerWidth < 720){
+    if (seeMore){
+      seeMore.addEventListener("click", seeParagraph);
+      seeMore.innerHTML = "See more...";
+    }
+    if (paragraphHide){
+      paragraphHide.style.display = "none";
+    }  
+  } else {
       if (seeMore){
-        seeMore.addEventListener("click", seeParagraph);
-        seeMore.innerHTML = "See more...";
+        seeMore.removeEventListener("click", seeParagraph);
       }
       if (paragraphHide){
-        paragraphHide.style.display = "none";
-      }  
-    } else {
-        if (seeMore){
-          seeMore.removeEventListener("click", seeParagraph);
-        }
-        if (paragraphHide){
-          paragraphHide.style.display = "block";
-        }
-        if (seeLess){
-          seeLess.innerHTML = "See less";
-        }
-    }
+        paragraphHide.style.display = "block";
+      }
+      if (seeLess){
+        seeLess.innerHTML = "See less";
+      }
+  }
 }
 addEvent();
 window.addEventListener("resize", addEvent);
@@ -222,9 +220,28 @@ function updateOrdersCard() {
     }
   }
 }
-
 window.addEventListener('load', function() {
   updateOrdersCard();
 });
 
+/* Contact Page Scripts */
+const formContact = document.querySelector('.form-contact');
+const submitButton = document.querySelector('.btn_contact');
+const message = document.createElement('span');
+message.className = "message-submit";
+message.style.display = 'none';
+message.textContent = 'Thanks for sending us a message. 😊';
+if (submitButton){
+  submitButton.parentNode.insertBefore(message, submitButton.nextSibling);
+}
+if (formContact){
+  formContact.addEventListener('submit', (event) => {
+    event.preventDefault();
+    message.style.display = 'block';
+    setTimeout(() => {
+      message.style.display = 'none';
+    }, 5000);
+    formContact.reset();
+  });
+}
 
