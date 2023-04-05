@@ -98,8 +98,8 @@ header{
     color: var(--accent4-color);
     font-weight: bold;
 }
-.nav-links a:hover, 
-.nav-links a.active{
+.nav-links .links:hover, 
+.nav-links .links.active{
     background-color: var(--secondary-color);
     border-radius: 0 25px 0 25px;
 }
@@ -141,6 +141,9 @@ footer{
     position: relative;
     transition: color 0.3s ease-in-out;
 } 
+.logo_img-footer{
+    min-width: 200px;
+}
 .about_company img{
     max-width: 35%;
 }

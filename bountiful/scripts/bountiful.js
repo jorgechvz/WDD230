@@ -9,7 +9,9 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const moveLogo = () =>{
     if (window.innerWidth < 1024){
         logo.innerHTML = `
+          <a class="logo_link" href="index.html">
             <img class="logo_img" src="images/logo_boutiful_foods.svg" alt="Bountiful Logo Header"> 
+          </a>
         `;    
     }else{
         logo.innerHTML = ``;
@@ -97,20 +99,23 @@ function capitalizeWords(str) {
   }
   return words.join(' ');
 }
-
+// Define the URLs for the current weather and forecast API calls
 const current_weather_url = 'https://api.openweathermap.org/data/2.5/weather?id=5393212&units=metric&appid=01d4fef5cd620e8975b247534684ac76';
 const forecast_weather_url = 'https://api.openweathermap.org/data/2.5/forecast?id=5393212&appid=425e98277e11c52c45f3883458535669&units=metric';
+// Get references to the HTML elements where the weather information will be displayed
 const currentWeather = document.querySelector('.weather_card');
 const forecast = document.querySelector('.forecast_card');
-
+// Fetch the current weather data and update the HTML with the information
 fetch(current_weather_url)
   .then(response => response.json())
   .then(data => {
+    // Extract the relevant information from the API response
     const currentTemp = data.main.temp.toFixed(0);
     const description = capitalizeWords(data.weather[0].description);
     const humidity = data.main.humidity;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
+    // Update the HTML with the current weather information
     if (currentWeather){
       currentWeather.innerHTML = `
         <h3>${capitalizeWords(data.name)}, ${data.sys.country}</h3>
@@ -122,10 +127,11 @@ fetch(current_weather_url)
     }
   })
   .catch(error => console.error(error));
-
+// Fetch the forecast weather data and update the HTML with the information
 fetch(forecast_weather_url)
   .then(response => response.json())
   .then(data => {
+    // Define an array with the indices of the forecasts to be displayed
     const forecastsToShow = [8, 16, 24]; 
     // Create the list of forecasts that will be displayed on the page
     const forecastList = forecastsToShow.map(index => {
@@ -140,6 +146,7 @@ fetch(forecast_weather_url)
       </div>
     `;
     }).join('');
+    // Update the HTML with the forecast information
     if(forecast){
       forecast.innerHTML = `
         ${forecastList}
@@ -147,7 +154,8 @@ fetch(forecast_weather_url)
     }
   })
   .catch(error => console.error(error));
-// Show see more button when the screen < 720px
+
+// Add functionality to the "See more" and "See less" buttons
 const seeMore = document.querySelector(".see-more");
 const paragraphHide = document.querySelector(".paragraph-hide");
 const seeLess = document.querySelector(".see-less");
@@ -190,6 +198,7 @@ window.addEventListener("resize", addEvent);
 
 /* Orders Script */
 const orderForm = document.getElementById('order-form');
+// Add event listener to the order form submit button
 if (orderForm){
   orderForm.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -202,6 +211,7 @@ if (orderForm){
     updateOrdersCard();
   });
 }
+// Update the orders card with the number of submitted orders
 function updateOrdersCard() {
   const ordersContainer = document.querySelector('.orders_container');
   let emptyCartOrders = document.querySelector(".empty-cart-orders");
@@ -220,13 +230,17 @@ function updateOrdersCard() {
     }
   }
 }
+// Call updateOrdersCard() function when the page is loaded
 window.addEventListener('load', function() {
   updateOrdersCard();
 });
 
 /* Contact Page Scripts */
+
+// Select form and submit button elements
 const formContact = document.querySelector('.form-contact');
 const submitButton = document.querySelector('.btn_contact');
+// Create a message element and add it to the form
 const message = document.createElement('span');
 message.className = "message-submit";
 message.style.display = 'none';
@@ -234,6 +248,7 @@ message.textContent = 'Thanks for sending us a message. 😊';
 if (submitButton){
   submitButton.parentNode.insertBefore(message, submitButton.nextSibling);
 }
+// Add event listener to the contact form submit button
 if (formContact){
   formContact.addEventListener('submit', (event) => {
     event.preventDefault();
